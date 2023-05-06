@@ -1,0 +1,32 @@
+{
+  "name": "software-developer-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavu072/software-developer-portfolio.git"
+  },
+  "keywords": [
+    "software",
+    "engineer",
+    "developer",
+    "programmer",
+    "portfolio",
+    "career"
+  ],
+  "author": "Avuyile Mgxotshwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavu072/software-developer-portfolio/issues"
+  },
+  "homepage": "https://github.com/mavu072/software-developer-portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
