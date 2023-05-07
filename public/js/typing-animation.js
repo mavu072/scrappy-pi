@@ -21,13 +21,12 @@ const type = () => {
     print('m', 11000);
     print('\u00A0', 12000);
     print('A', 13000);
-    print('.', 14000);
-    print('V', 15000);
-    print('_', 16000);
+    print('V', 14000);
+    print('_', 15000);
     clear();
     setTimeout(() => {
         type();
-    }, 17000);
+    }, 16000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

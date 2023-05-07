@@ -1,23 +1,57 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+.pageHeader {
+    position: absolute; top: 10%;
+}
+
 .font-sacramento {
-    font-family: "Sacramento";
+    font-family: "Sacramento" !important;
 }
 
 .font-vt323 {
-    font-family: "VT323";
+    font-family: "VT323" !important;
 }
 
 .banner-fontsize {
     font-size: 80px;
 }
 
-.nav-link, .navbar-brand {
+.uppercase {
+    text-transform: uppercase;
+}
+
+.nav-link {
     color: white !important;
+}
+
+.nav-link:hover {
+    color: green !important;
+}
+
+.navbar-brand {
+    color: green !important;
 }
 
 .bg-black {
     background-color: black !important;
 }
 
-.vh-95 {
+.vh-extend {
     height: 95vh;
+}
+
+.img-small {
+    width: 25%;
+    height: 25%;
+}
+
+/* .info ul li {
+    list-style-type: circle;
+}  */
+
+@media only screen and (max-width: 1440px) {
+    .vh-extend {
+        height: 94vh !important;
+    }
 }

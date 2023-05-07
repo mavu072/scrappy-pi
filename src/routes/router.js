@@ -13,14 +13,14 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
-router.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/home.html'));
+router.get('/overview', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/overview.html'));
 });
 
-router.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/about.html'));
+router.get('/education-and-employment-history', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/history.html'));
 });
 
-router.get('/portfolio', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/portfolio.html'));
+router.get('/projects', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/projects.html'));
 });
