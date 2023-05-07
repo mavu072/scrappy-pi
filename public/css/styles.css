@@ -1,5 +1,9 @@
-.custom-font {
+.font-sacramento {
     font-family: "Sacramento";
+}
+
+.font-vt323 {
+    font-family: "VT323";
 }
 
 .banner-fontsize {
