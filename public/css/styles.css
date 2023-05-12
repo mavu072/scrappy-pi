@@ -1,8 +1,10 @@
 body {
     font-family: "Roboto", sans-serif !important;
 }
+
 .pageHeader {
-    position: absolute; top: 10%;
+    position: absolute;
+    top: 10%;
 }
 
 .font-sacramento {
@@ -50,8 +52,20 @@ body {
     list-style-type: circle;
 }  */
 
+#animation {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
 @media only screen and (max-width: 1440px) {
     .vh-extend {
         height: 94vh !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #animation {
+        font-size: xx-large !important;
     }
 }

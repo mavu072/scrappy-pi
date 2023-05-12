@@ -9,26 +9,24 @@ const clear = () => {
 }
 
 const type = () => {
-    print('h', 1000);
-    print('e', 2000);
-    print('l', 3000);
-    print('l', 4000);
-    print('o', 5000);
-    print(',', 7000);
-    print('\u00A0', 8000);
-    print('I', 9000);
-    print('\'', 10000);
-    print('m', 11000);
-    print('\u00A0', 12000);
-    print('A', 13000);
-    print('V', 14000);
-    print('_', 15000);
-    clear();
+    const phrase = "Hey\u00A0there!\u00A0I'm\u00A0Avuyile";
+    const chars = Array.from(phrase);
+    let secs = 0;
+    for (let x = 0; x < chars.length; x++) {
+        const char = chars[x];
+        secs += 500;
+        print(char, secs);
+    }
+    
+    setTimeout(() => {
+        clear();
+    }, secs + 2000);
+
     setTimeout(() => {
         type();
-    }, 16000);
+    }, secs + 2500);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    type(); // typing "hello, I'm AV_"
+    type(); // typing...
 });
