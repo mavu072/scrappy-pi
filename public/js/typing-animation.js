@@ -5,11 +5,19 @@ const print = (char, secs) => {
 }
 
 const clear = () => {
-    document.querySelector('#typing-animation').innerText = "";
+    let text = document.querySelector('#typing-animation').innerText;
+    let secs = 0;
+    for (let y = 0; y < text.length; y++) {
+        secs += 250;
+        setTimeout(() => {
+            text = text.slice(0, -1);
+            document.querySelector('#typing-animation').innerText = text;
+        }, secs);
+    }
 }
 
 const type = () => {
-    const phrase = "Hey\u00A0there!\u00A0I'm\u00A0Avuyile";
+    const phrase = "Hey\u00A0there!\u00A0I'm\u00A0Avuyile.";
     const chars = Array.from(phrase);
     let secs = 0;
     for (let x = 0; x < chars.length; x++) {
@@ -20,11 +28,11 @@ const type = () => {
     
     setTimeout(() => {
         clear();
-    }, secs + 2000);
+    }, secs + 6000);
 
     setTimeout(() => {
         type();
-    }, secs + 2500);
+    }, secs + 12000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

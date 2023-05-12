@@ -68,4 +68,13 @@ body {
     #animation {
         font-size: xx-large !important;
     }
+    #line1 {
+        font-size: larger;
+    }
+    #line2 {
+        font-size: large;
+    }
+    #line3 {
+        font-size: medium;
+    }
 }
