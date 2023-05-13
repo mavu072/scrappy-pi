@@ -6,7 +6,7 @@ body {
 .box {
     margin: 0 10%;
     height: 80%;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 10px 0 40px 100px;
 }
 
@@ -42,7 +42,7 @@ body {
     color: #fff;
     border-radius: 10px;
     line-height: 20px;
-    width: 80%;
+    width: 85%;
 }
 
 
@@ -107,6 +107,7 @@ body {
     color: #fff;
     font-size: 80%;
     font-weight: bold;
+    text-align: right;
 }
 
 .box .time span:first-child {
@@ -114,7 +115,7 @@ body {
 }
 
 .box .time span:last-child {
-    top: 91%
+    top: 93%
 }
 
 
@@ -197,10 +198,29 @@ svg {
 
 @media only screen and (max-width: 1440px) {
     .box {
-        overflow: scroll !important;
         padding: 10px 0 40px 100px;
     }
     .arrow {
         display: none !important;
+    }
+    .box .time span {
+        left: -18%;
+    }
+    #now {
+        left: -13%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .box {
+        margin: 0 0%;
+        padding: 0px 10px 0px 0px;
+    }
+    .box .time span {
+        left: -23%;
+        width: min-content;
+    }
+    #now {
+        left: -23%;
     }
 }

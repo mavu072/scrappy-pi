@@ -11,34 +11,34 @@ const isInViewport = (element) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Listen for scrolling
-    document.addEventListener("scroll", () => {
-        const educationTimeline = document.querySelector("#second-list");
-        const inViewport = isInViewport(educationTimeline);
-        if (inViewport) {
-            document.querySelector("#timelineHeading").innerText = "Education";
-        } else {
-            document.querySelector("#timelineHeading").innerText = "Employment History";
-        }
-    });
+    // document.addEventListener("scroll", () => {
+    //     const educationTimeline = document.querySelector("#second-list");
+    //     const inViewport = isInViewport(educationTimeline);
+    //     if (inViewport) {
+    //         document.querySelector("#timelineHeading").innerText = "Education";
+    //     } else {
+    //         document.querySelector("#timelineHeading").innerText = "Employment History";
+    //     }
+    // });
 
-    let downArrow = document.querySelector("#btn1");
-    let upArrow = document.querySelector("#btn2");
+//     let downArrow = document.querySelector("#btn1");
+//     let upArrow = document.querySelector("#btn2");
 
-    downArrow.onclick = () => {
-        'use strict';
-        document.querySelector("#first-list").style = "top:-620px";
-        document.querySelector("#second-list").style = "top:-620px";
-        downArrow.style = "display:none";
-        upArrow.style = "display:block";
-        document.querySelector("#timelineHeading").innerText = "Education";
-    };
+//     downArrow.onclick = () => {
+//         'use strict';
+//         document.querySelector("#first-list").style = "top:-620px";
+//         document.querySelector("#second-list").style = "top:-620px";
+//         downArrow.style = "display:none";
+//         upArrow.style = "display:block";
+//         document.querySelector("#timelineHeading").innerText = "Education";
+//     };
 
-    upArrow.onclick = () => {
-        'use strict';
-        document.querySelector("#first-list").style = "top:0";
-        document.querySelector("#second-list").style = "top:80px";
-        upArrow.style = "display:none";
-        downArrow.style = "display:block";
-    };
+//     upArrow.onclick = () => {
+//         'use strict';
+//         document.querySelector("#first-list").style = "top:0";
+//         document.querySelector("#second-list").style = "top:80px";
+//         upArrow.style = "display:none";
+//         downArrow.style = "display:block";
+//     };
 });
 

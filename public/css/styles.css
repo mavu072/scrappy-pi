@@ -1,11 +1,15 @@
 body {
     font-family: "Roboto", sans-serif !important;
+    background-image: url('../assets/Interstellar-bg.svg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.pageHeader {
+/* .pageHeader {
     position: absolute;
     top: 10%;
-}
+} */
 
 .font-sacramento {
     font-family: "Sacramento" !important;

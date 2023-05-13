@@ -17,9 +17,6 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Scripts -->
     <script src="./js/history.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -28,6 +25,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="./overview.html">Overview <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./education-and-employment-history.html">Education and Employment History</a>
+                    <a class="nav-link" href="./education-and-employment-history.html">Employment History and Education</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./projects.html">Projects</a>
@@ -52,11 +52,11 @@
         </div>
     </nav>
     <!-- page heading -->
-    <div class="container-fluid d-flex align-items-center justify-content-center bg-black text-white">
-        <h1 id="timelineHeading" class="pageHeader font-vt323 pb-3">Employment History</h1>
+    <div class="container-fluid d-flex align-items-center justify-content-center text-white">
+        <h1 id="timelineHeading" class="font-vt323 pb-3"><span class="text-success">Employment</span> History and <span class="text-success">Education</span></h1>
     </div>
     <!-- timeline -->
-    <div class="container-fluid vh-extend d-flex align-items-center justify-content-center bg-black text-white">
+    <div class="container-fluid d-flex align-items-center justify-content-center text-white pb-5">
         <div class="box">
             <!-- Employment history -->
             <ul id="first-list">
@@ -64,12 +64,15 @@
                     <span></span>
                     <div class="title mb-3 h5">Junior Developer at KAAP - Intelligent Tech Solutions</div>
                     <div class="info">
-                        &nbsp;&nbsp;• Developing and maintaining BPMN workflows with Iusta.<br>
-                        &nbsp;&nbsp;• Developing code for BPMN workflows, in JavaScript.
+                        &nbsp;&nbsp;• Used Iusta to develop a BPMN workflow that automated referral marketing for our law firm client.<br>
+                        &nbsp;&nbsp;• Developed a BPMN workflow that automated a newsletter for our law firm client.<br>
+                        &nbsp;&nbsp;• Built BPMN workflows for our law firm client, automating various tasks for cases against online casinos.<br>
+                        &nbsp;&nbsp;• Developed JavaScript code for BPMN workflow scripts.<br>
+                        &nbsp;&nbsp;• Developed a full-stack application that uses ChatGPT API to generate responses for customer FAQs.
                     </div>
                     <div class="name">Cape Town</div>
                     <div class="time">
-                        <span>PRESENT</span>
+                        <span id="now">NOW</span>
                         <span>OCT 2022</span>
                     </div>
                 </li>
@@ -77,11 +80,14 @@
                     <span></span>
                     <div class="title mb-3 h5">Junior Developer at WorkPool</div>
                     <div class="info">
-                        &nbsp;&nbsp;• Developing new software and updating existing features.<br>
-                        &nbsp;&nbsp;• Writing software design specifications and business requirements.<br>
-                        &nbsp;&nbsp;• Designing and coding updates to the user interface's look and feel.<br>
-                        &nbsp;&nbsp;• Investigating, reporting and coding fixes for software bugs.<br>
-                        &nbsp;&nbsp;• Communicating with clients and internal stakeholders about the project.
+                        &nbsp;&nbsp;• Developed minor updates to improve certain features of the WorkPool application<br>
+                        &nbsp;&nbsp;• Investigated, reported, and fixed bugs in WorkPool.<br>
+                        &nbsp;&nbsp;• Built a custom WorkPool feature for a client to manage investment product applications received via email.<br>
+                        &nbsp;&nbsp;• Built a custom WorkPool feature for a client to capture and view offshore fund investment instructions.<br>
+                        &nbsp;&nbsp;• Built a custom WorkPool feature for an accounting firm client, enabling them to generate reports on user tasks.<br>
+                        &nbsp;&nbsp;• Wrote software specifications and release notes for new features.<br>
+                        &nbsp;&nbsp;• Liaised with IT support as needed to roll out new features.<br>
+                        &nbsp;&nbsp;• Updated UAT servers using Linux terminal, Putty, and WinSCP.<br>
                     </div>
                     <div class="name">Cape Town</div>
                     <div class="time">
@@ -93,11 +99,10 @@
                     <span></span>
                     <div class="title mb-3 h5">Software Development Intern at WorkPool</div>
                     <div class="info">
-                        &nbsp;&nbsp;• Completed training in Java, JavaScript, HTML & CSS, MySQL and Spring MVC.<br>
-                        &nbsp;&nbsp;• Introduced to WildFly, Hibernate, Object Relational Mapping and JSP.<br>
-                        &nbsp;&nbsp;• Updated existing features based on software requirement specifications.<br>
-                        &nbsp;&nbsp;• Designed and coded updates to the user interface's look and feel.<br>
-                        &nbsp;&nbsp;• Investigated, reported and coded fixes for software bugs.<br>
+                        &nbsp;&nbsp;• Completed training in Java, JavaScript, MySQL, Spring MVC, WildFly, Hibernate, JSP, and Object-Relational Mapping.<br>
+                        &nbsp;&nbsp;• Investigated, reported, and resolved software bugs in WorkPool.<br>
+                        &nbsp;&nbsp;• Developed a full-stack WorkPool clone application.<br>
+                        &nbsp;&nbsp;• Built a full-stack application that validates and cleans a Spring properties file.<br>
                     </div>
                     <div class="name">Cape Town</div>
                     <div class="time">
@@ -105,55 +110,6 @@
                         <span>JUL 2021</span>
                     </div>
                 </li>
-
-                <div class="arrow" id="btn1">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929"
-                        style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z"
-                                    fill="#FFFFFF" />
-                                <path
-                                    d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z"
-                                    fill="#FFFFFF" />
-                            </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                    </svg>
-
-                </div>
             </ul>
 
             <!-- Education -->
@@ -183,58 +139,11 @@
                         <span>JAN 2013</span>
                     </div>
                 </li>
-
-                <div class="arrow" id="btn2">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929"
-                        style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z"
-                                    fill="#FFFFFF" />
-                                <path
-                                    d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z"
-                                    fill="#FFFFFF" />
-                            </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                    </svg>
-
-                </div>
             </ul>
         </div>
     </div>
+    <!-- page footer-->
+    <hr color="white">
 </body>
 
 </html>
