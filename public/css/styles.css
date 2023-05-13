@@ -52,6 +52,11 @@ body {
     height: 25%;
 }
 
+.menu {
+    width: 20px;
+    height: 20px;
+}
+
 /* .info ul li {
     list-style-type: circle;
 }  */
@@ -73,12 +78,16 @@ body {
         font-size: xx-large !important;
     }
     #line1 {
-        font-size: larger;
+        font-size: larger !important;
     }
     #line2 {
-        font-size: large;
+        font-size: large !important;
     }
     #line3 {
-        font-size: medium;
+        font-size: medium !important;
+    }
+    #line1 > strong, #line2 > strong, #line3 > strong {
+        font-size: xx-large !important;
+        opacity: 0.6 !important;
     }
 }

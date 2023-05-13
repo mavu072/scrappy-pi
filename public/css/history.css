@@ -143,6 +143,10 @@ body {
     cursor: pointer;
 }
 
+.company {
+    opacity: 0.6;
+}
+
 svg {
     width: 20px;
     height: 20px
@@ -219,6 +223,16 @@ svg {
     .box .time span {
         left: -23%;
         width: min-content;
+    }
+    .box ul li {
+        line-height: 22px;
+        width: 84%;
+    }
+    .box ul:before {
+        left: 38px
+    }
+    .box ul li>span {
+        left: -22px
     }
     #now {
         left: -23%;
