@@ -6,6 +6,10 @@ body {
     background-size: cover;
 }
 
+hr {
+    border-top: 2px solid #e83e8c !important;
+}
+
 /* .pageHeader {
     position: absolute;
     top: 10%;
@@ -32,11 +36,11 @@ body {
 }
 
 .nav-link:hover {
-    color: green !important;
+    color: #e83e8c !important;
 }
 
 .navbar-brand {
-    color: green !important;
+    color: #e83e8c !important;
 }
 
 .bg-black {
@@ -57,23 +61,33 @@ body {
     height: 20px;
 }
 
-/* .info ul li {
-    list-style-type: circle;
-}  */
-
 #animation {
+    font-family: "VT323" !important;
+    color: #e83e8c;
     overflow: hidden;
     text-overflow: clip;
     white-space: nowrap;
 }
 
-@media only screen and (max-width: 1440px) {
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+@media only screen and (max-width: 992px) {
     .vh-extend {
         height: 94vh !important;
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     #animation {
         font-size: xx-large !important;
     }
